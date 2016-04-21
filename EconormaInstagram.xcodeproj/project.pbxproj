@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12E886881CC90A4400FB2D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E886871CC90A4400FB2D14 /* AppDelegate.swift */; };
+		12E8868A1CC90A4400FB2D14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E886891CC90A4400FB2D14 /* ViewController.swift */; };
+		12E8868D1CC90A4400FB2D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E8868B1CC90A4400FB2D14 /* Main.storyboard */; };
+		12E8868F1CC90A4400FB2D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E8868E1CC90A4400FB2D14 /* Assets.xcassets */; };
+		12E886921CC90A4400FB2D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E886901CC90A4400FB2D14 /* LaunchScreen.storyboard */; };
+		12E8869D1CC90A4400FB2D14 /* EconormaInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8869C1CC90A4400FB2D14 /* EconormaInstagramTests.swift */; };
+		12E886A81CC90A4400FB2D14 /* EconormaInstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E886A71CC90A4400FB2D14 /* EconormaInstagramUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12E886991CC90A4400FB2D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E8867C1CC90A4300FB2D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12E886831CC90A4400FB2D14;
+			remoteInfo = EconormaInstagram;
+		};
+		12E886A41CC90A4400FB2D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E8867C1CC90A4300FB2D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12E886831CC90A4400FB2D14;
+			remoteInfo = EconormaInstagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12E886841CC90A4400FB2D14 /* EconormaInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EconormaInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E886871CC90A4400FB2D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12E886891CC90A4400FB2D14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12E8868C1CC90A4400FB2D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12E8868E1CC90A4400FB2D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12E886911CC90A4400FB2D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12E886931CC90A4400FB2D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E886981CC90A4400FB2D14 /* EconormaInstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EconormaInstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E8869C1CC90A4400FB2D14 /* EconormaInstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconormaInstagramTests.swift; sourceTree = "<group>"; };
+		12E8869E1CC90A4400FB2D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E886A31CC90A4400FB2D14 /* EconormaInstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EconormaInstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E886A71CC90A4400FB2D14 /* EconormaInstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconormaInstagramUITests.swift; sourceTree = "<group>"; };
+		12E886A91CC90A4400FB2D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12E886811CC90A4400FB2D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E886951CC90A4400FB2D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E886A01CC90A4400FB2D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12E8867B1CC90A4300FB2D14 = {
+			isa = PBXGroup;
+			children = (
+				12E886861CC90A4400FB2D14 /* EconormaInstagram */,
+				12E8869B1CC90A4400FB2D14 /* EconormaInstagramTests */,
+				12E886A61CC90A4400FB2D14 /* EconormaInstagramUITests */,
+				12E886851CC90A4400FB2D14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12E886851CC90A4400FB2D14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12E886841CC90A4400FB2D14 /* EconormaInstagram.app */,
+				12E886981CC90A4400FB2D14 /* EconormaInstagramTests.xctest */,
+				12E886A31CC90A4400FB2D14 /* EconormaInstagramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12E886861CC90A4400FB2D14 /* EconormaInstagram */ = {
+			isa = PBXGroup;
+			children = (
+				12E886871CC90A4400FB2D14 /* AppDelegate.swift */,
+				12E886891CC90A4400FB2D14 /* ViewController.swift */,
+				12E8868B1CC90A4400FB2D14 /* Main.storyboard */,
+				12E8868E1CC90A4400FB2D14 /* Assets.xcassets */,
+				12E886901CC90A4400FB2D14 /* LaunchScreen.storyboard */,
+				12E886931CC90A4400FB2D14 /* Info.plist */,
+			);
+			path = EconormaInstagram;
+			sourceTree = "<group>";
+		};
+		12E8869B1CC90A4400FB2D14 /* EconormaInstagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				12E8869C1CC90A4400FB2D14 /* EconormaInstagramTests.swift */,
+				12E8869E1CC90A4400FB2D14 /* Info.plist */,
+			);
+			path = EconormaInstagramTests;
+			sourceTree = "<group>";
+		};
+		12E886A61CC90A4400FB2D14 /* EconormaInstagramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12E886A71CC90A4400FB2D14 /* EconormaInstagramUITests.swift */,
+				12E886A91CC90A4400FB2D14 /* Info.plist */,
+			);
+			path = EconormaInstagramUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12E886831CC90A4400FB2D14 /* EconormaInstagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E886AC1CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagram" */;
+			buildPhases = (
+				12E886801CC90A4400FB2D14 /* Sources */,
+				12E886811CC90A4400FB2D14 /* Frameworks */,
+				12E886821CC90A4400FB2D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EconormaInstagram;
+			productName = EconormaInstagram;
+			productReference = 12E886841CC90A4400FB2D14 /* EconormaInstagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12E886971CC90A4400FB2D14 /* EconormaInstagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E886AF1CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagramTests" */;
+			buildPhases = (
+				12E886941CC90A4400FB2D14 /* Sources */,
+				12E886951CC90A4400FB2D14 /* Frameworks */,
+				12E886961CC90A4400FB2D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12E8869A1CC90A4400FB2D14 /* PBXTargetDependency */,
+			);
+			name = EconormaInstagramTests;
+			productName = EconormaInstagramTests;
+			productReference = 12E886981CC90A4400FB2D14 /* EconormaInstagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12E886A21CC90A4400FB2D14 /* EconormaInstagramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E886B21CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagramUITests" */;
+			buildPhases = (
+				12E8869F1CC90A4400FB2D14 /* Sources */,
+				12E886A01CC90A4400FB2D14 /* Frameworks */,
+				12E886A11CC90A4400FB2D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12E886A51CC90A4400FB2D14 /* PBXTargetDependency */,
+			);
+			name = EconormaInstagramUITests;
+			productName = EconormaInstagramUITests;
+			productReference = 12E886A31CC90A4400FB2D14 /* EconormaInstagramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12E8867C1CC90A4300FB2D14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alessandro Mattiuzzi MacPro";
+				TargetAttributes = {
+					12E886831CC90A4400FB2D14 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					12E886971CC90A4400FB2D14 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 12E886831CC90A4400FB2D14;
+					};
+					12E886A21CC90A4400FB2D14 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 12E886831CC90A4400FB2D14;
+					};
+				};
+			};
+			buildConfigurationList = 12E8867F1CC90A4300FB2D14 /* Build configuration list for PBXProject "EconormaInstagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12E8867B1CC90A4300FB2D14;
+			productRefGroup = 12E886851CC90A4400FB2D14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12E886831CC90A4400FB2D14 /* EconormaInstagram */,
+				12E886971CC90A4400FB2D14 /* EconormaInstagramTests */,
+				12E886A21CC90A4400FB2D14 /* EconormaInstagramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12E886821CC90A4400FB2D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E886921CC90A4400FB2D14 /* LaunchScreen.storyboard in Resources */,
+				12E8868F1CC90A4400FB2D14 /* Assets.xcassets in Resources */,
+				12E8868D1CC90A4400FB2D14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E886961CC90A4400FB2D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E886A11CC90A4400FB2D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12E886801CC90A4400FB2D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E8868A1CC90A4400FB2D14 /* ViewController.swift in Sources */,
+				12E886881CC90A4400FB2D14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E886941CC90A4400FB2D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E8869D1CC90A4400FB2D14 /* EconormaInstagramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E8869F1CC90A4400FB2D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E886A81CC90A4400FB2D14 /* EconormaInstagramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12E8869A1CC90A4400FB2D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12E886831CC90A4400FB2D14 /* EconormaInstagram */;
+			targetProxy = 12E886991CC90A4400FB2D14 /* PBXContainerItemProxy */;
+		};
+		12E886A51CC90A4400FB2D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12E886831CC90A4400FB2D14 /* EconormaInstagram */;
+			targetProxy = 12E886A41CC90A4400FB2D14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12E8868B1CC90A4400FB2D14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12E8868C1CC90A4400FB2D14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12E886901CC90A4400FB2D14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12E886911CC90A4400FB2D14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12E886AA1CC90A4400FB2D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12E886AB1CC90A4400FB2D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12E886AD1CC90A4400FB2D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EconormaInstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		12E886AE1CC90A4400FB2D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EconormaInstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		12E886B01CC90A4400FB2D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EconormaInstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EconormaInstagram.app/EconormaInstagram";
+			};
+			name = Debug;
+		};
+		12E886B11CC90A4400FB2D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EconormaInstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EconormaInstagram.app/EconormaInstagram";
+			};
+			name = Release;
+		};
+		12E886B31CC90A4400FB2D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EconormaInstagramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EconormaInstagram;
+			};
+			name = Debug;
+		};
+		12E886B41CC90A4400FB2D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EconormaInstagramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EconormaInstagram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12E8867F1CC90A4300FB2D14 /* Build configuration list for PBXProject "EconormaInstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E886AA1CC90A4400FB2D14 /* Debug */,
+				12E886AB1CC90A4400FB2D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12E886AC1CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E886AD1CC90A4400FB2D14 /* Debug */,
+				12E886AE1CC90A4400FB2D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12E886AF1CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E886B01CC90A4400FB2D14 /* Debug */,
+				12E886B11CC90A4400FB2D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12E886B21CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E886B31CC90A4400FB2D14 /* Debug */,
+				12E886B41CC90A4400FB2D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12E8867C1CC90A4300FB2D14 /* Project object */;
+}

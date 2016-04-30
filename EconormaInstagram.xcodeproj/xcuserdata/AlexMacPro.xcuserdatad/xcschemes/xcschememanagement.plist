@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>EconormaInstagram WatchKit App (Glance).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>EconormaInstagram WatchKit App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>EconormaInstagram WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>EconormaInstagram.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +27,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1201B8141CD38B5B004E2DC6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>12E886831CC90A4400FB2D14</key>
 		<dict>
 			<key>primary</key>

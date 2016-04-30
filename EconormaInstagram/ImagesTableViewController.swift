@@ -8,56 +8,33 @@
 
 import UIKit
 import Firebase
-import WatchConnectivity
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate, WCSessionDelegate {
+class ImagesTableViewController: UITableViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    var customView:CustomView!
+    @IBOutlet var imagesTableView: UITableView!
+    @IBOutlet weak var addButton: UIBarButtonItem!
+    
     var activityIndicator:UIActivityIndicatorView!
     var refresh: UIRefreshControl!
-    
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var addButton: UIBarButtonItem!
     
     var firebase = Firebase()
     var uuid: String = ""
     var items = [Image]()
     var cameraBool = false
     
-    var sensors = [String]()
-    var desSensors = [String]()
-    var dateStr = [String]()
-    var temp = [String]()
-    var channel = [String]()
-    
-    var session: WCSession!
-    
     override func viewDidLoad() {
-        navigationController!.navigationBar.barStyle = .Black
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
-        tableView.delegate = self
-        tableView.dataSource = self
+         imagesTableView.delegate = self
+        imagesTableView.dataSource = self
         refresh = UIRefreshControl()
         refresh.addTarget(self, action: #selector(ImagesTableViewController.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
-        tableView.addSubview(refresh)
+        imagesTableView.addSubview(refresh)
         uuid = UIDevice.currentDevice().identifierForVendor!.UUIDString
         firebase = Firebase(url:"https://econormainstagram.firebaseio.com/images")
         loadDataFromFirebase()
         super.viewDidLoad()
-        
-        loadArray()
-        
-        if(WCSession.isSupported()){
-            session = WCSession.defaultSession()
-            session!.delegate = self
-            session!.activateSession()
-        }
     }
     
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
+    
     
     func loadDataFromFirebase() {
         
@@ -77,7 +54,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
             
             self.items = newItems
-            self.tableView.reloadData()
+            self.imagesTableView.reloadData()
             
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             self.removeActivityIndicator()
@@ -97,13 +74,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //         return items.count
     //    }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
         
     }
-      
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let identifier = "imageCell"
         
@@ -118,12 +95,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let imageData = NSData(base64EncodedString: imageItem.photo, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
         let image = UIImage(data: imageData!)
         cell.catImageView?.image = image
-        cell.catNameLabel?.text = "Ciccio Pasticcio"
-        cell.dateLabel.text = imageItem.date
-        cell.dateLabel?.font = UIFont.boldSystemFontOfSize(14)
-        cell.dateLabel?.textColor = UIColor.rgb(155, green: 161, blue: 171)
+        cell.catNameLabel?.text = "Mattiuzzi Alessandro"
         cell.catNameLabel?.font = UIFont.boldSystemFontOfSize(14)
-//        cell.catNameLabel?.textColor = UIColor.rgb(155, green: 161, blue: 171)
+        cell.catNameLabel?.textColor = UIColor.rgb(155, green: 161, blue: 171)
         
         
         return cell
@@ -137,7 +111,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //        let image = UIImage(data: imageData!)
         //        cell.catImageView?.image = image
         //
-        //        cell.catNameLabel?.text = "Ciccio Pasticcio"
+        //        cell.catNameLabel?.text = "Mattiuzzi Alessandro"
         //
         //
         //        cell.detailTextLabel?.text = imageItem.author + "  (" + imageItem.date + ")"
@@ -148,12 +122,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
     
     
     @IBAction func addAction(sender: AnyObject) {
+        
         
         let imagePickerActionSheet = UIAlertController(title: "Snap/Upload Photo",
                                                        message: nil, preferredStyle: .ActionSheet)
@@ -232,7 +207,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         let convertedDate = dateFormatter.stringFromDate(currentDate)
         
-        let image: NSDictionary = ["uuid":uuid, "name": "Me", "label": "foto", "author":"Ciccio Pasticcio", "date":convertedDate, "comment": "", "photo": base64String]
+        let image: NSDictionary = ["uuid":uuid, "name": "Me", "label": "foto", "author":"Alessandro Mattiuzzi", "date":convertedDate, "comment": "", "photo": base64String]
         
         let profile = firebase.ref.childByAutoId()
         
@@ -250,7 +225,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
     }
-   
+    
     
     func addActivityIndicator() {
         activityIndicator = UIActivityIndicatorView(frame: view.bounds)
@@ -271,7 +246,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func do_table_refresh()
     {
         dispatch_async(dispatch_get_main_queue(), {
-            self.tableView.reloadData()
+            self.imagesTableView.reloadData()
             self.refresh.endRefreshing()
             return
         })
@@ -286,126 +261,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     
-    @IBAction func plusAction(sender: AnyObject) {
-        
-        customView = CustomView.loadNib()
-        customView.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).CGColor
-        customView.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        customView.layer.borderWidth = 1.0
-        customView.layer.cornerRadius = 1
-        let catImage = UIImage(named: "cat.jpeg")
-        customView.imageView.image = catImage
-        customView.commentTextField.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).CGColor
-        customView.commentTextField.layer.borderWidth = 1.0
-        customView.commentTextField.layer.cornerRadius = 1
-        customView.commentTextField.delegate=self
-        customView.confirmButton.layer.cornerRadius = 5
-        customView.confirmButton.layer.borderWidth = 1
-        customView.confirmButton.layer.borderColor = UIColor.lightGrayColor().CGColor
-        customView.confirmButton.addTarget(self, action: #selector(ViewController.confirmButtonTapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        customView.frame = CGRectMake(0, self.view.frame.size.height/2, self.view.frame.size.width, self.view.frame.size.height/2)
-        
-        customView.alpha = 0.0
-        self.view.addSubview(customView)
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.customView.alpha = 1.0
-        }
-        
-        
-        
-//         UIView.transitionFromView(self.view, toView: self.customView, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
-        
-    }
-    
-    func confirmButtonTapped(sender:UIButton)
-    {
-        customView.removeFromSuperview()
-    }
-    
-    
-    
-    func loadArray(){
-        
-        sensors.append("SONDA1")
-        sensors.append("SONDA2")
-        sensors.append("SONDA3")
-        sensors.append("SONDA4")
-        
-        desSensors.append("CELLA FRIGO 1")
-        desSensors.append("CELLA FRIGO 2")
-        desSensors.append("CELLA FRIGO 3")
-        desSensors.append("CELLA FRIGO 4")
-        
-        dateStr.append("21/01/2016 20:15:23")
-        dateStr.append("21/01/2016 20:22:23")
-        dateStr.append("21/01/2016 20:11:23")
-        dateStr.append("21/01/2016 20:15:23")
-        
-        temp.append("-2.7")
-        temp.append("-12.7")
-        temp.append("10")
-        temp.append("15.7")
-        
-        channel.append("ft2500")
-        channel.append("ft2500")
-        channel.append("ft2500")
-        channel.append("ft2500")
-        
-    }
-    
-    
-    @IBAction func backgroundAppleWatch(sender: AnyObject) {
-       
-            do {
-                try session?.updateApplicationContext(
-                    ["message" : "what the fuck"]
-                )
-            } catch let error as NSError {
-                NSLog("Updating the context failed: " + error.localizedDescription)
-            }
-         
-        
-        
-//        do {
-//           let applicationDict = ["sensor": sensors, "description": desSensors, "date": dateStr, "temp": temp, "channel": channel]
-//                try WCSession.defaultSession().updateApplicationContext(applicationDict)
-//        } catch {
-//            let alert = UIAlertController(title: "Errore", message: "ASsssssss", preferredStyle: UIAlertControllerStyle.Alert)
-//            self.presentViewController(alert, animated: true, completion: nil)
-//        }
-        
-    }
-    
-    @IBAction func playAppleWatch(sender: AnyObject) {
-         session.sendMessage(["a":"hello"], replyHandler: nil, errorHandler: nil)
-        
-//        let image = UIImage(named: "cat.jpeg")
-//        let data = UIImageJPEGRepresentation(image!, 1.0)
-        
-//        let imageItem = items[0]
-//        let imageData = NSData(base64EncodedString: imageItem.photo, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
-//        let image = UIImage(data: imageData!)
-//        let data = UIImageJPEGRepresentation(image!, 1.0)
- 
-        
-//        session.sendMessageData(data!, replyHandler: nil, errorHandler: nil)
-    }
-    
-    
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
-        
-        dispatch_async(dispatch_get_main_queue(), {
-            
-            let watchMessagge = message["b"]! as? String
-            let alert = UIAlertController(title: "Apple Watch Reply", message: watchMessagge, preferredStyle: UIAlertControllerStyle.Alert)
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-            
-            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {
-                (alertAction: UIAlertAction!) in
-                alert.dismissViewControllerAnimated(true, completion: nil)
-            }))
-            
-        })
-    }
 }

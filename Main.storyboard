@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LpO-ja-ZcC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--Images Table View Controller-->
+        <scene sceneID="dT0-UB-gKI">
+            <objects>
+                <tableViewController id="guS-7r-cpC" customClass="ImagesTableViewController" customModule="EconormaInstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" id="ABI-V5-o02">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="imageCell" selectionStyle="default" indentationWidth="10" rowHeight="350" id="fNs-aO-H3f" customClass="ImagesTableViewCell" customModule="EconormaInstagram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="350"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fNs-aO-H3f" id="0zM-cQ-NiD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="guS-7r-cpC" id="WgF-tb-pcl"/>
+                            <outlet property="delegate" destination="guS-7r-cpC" id="cl2-Vv-eKy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mG3-vB-AjN">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" systemItem="add" id="I9d-49-hOx">
+                                <connections>
+                                    <action selector="addAction:" destination="guS-7r-cpC" id="wWy-8K-hEV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Test" id="NzD-gk-eff"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="I9d-49-hOx" id="xGg-bw-CkT"/>
+                        <outlet property="imagesTableView" destination="ABI-V5-o02" id="s0B-oE-KyE"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OvE-gy-bMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="1134"/>
+        </scene>
+        <!--EcoNorma  Images-->
+        <scene sceneID="ukB-2G-icT">
+            <objects>
+                <viewController id="fg4-n3-6RB" customClass="ViewController" customModule="EconormaInstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AGP-4K-aiB"/>
+                        <viewControllerLayoutGuide type="bottom" id="WFJ-xi-LMO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NA3-5V-T2c">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pxe-me-1gt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="imageCell" selectionStyle="default" indentationWidth="10" rowHeight="350" id="t4h-dd-Q10" customClass="ImagesTableViewCell" customModule="EconormaInstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="350"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t4h-dd-Q10" id="VYA-zb-9eM">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNN-3a-4yZ">
+                                <rect key="frame" x="515" y="535" width="92" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="1Gw-wg-Ywf"/>
+                                </constraints>
+                                <state key="normal" image="plus_2"/>
+                                <connections>
+                                    <action selector="plusAction:" destination="fg4-n3-6RB" eventType="touchUpInside" id="GsS-X9-J9l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pxe-me-1gt" firstAttribute="bottom" secondItem="WFJ-xi-LMO" secondAttribute="top" id="GSO-8B-e7a"/>
+                            <constraint firstItem="Pxe-me-1gt" firstAttribute="top" secondItem="NA3-5V-T2c" secondAttribute="top" id="R6z-EC-sWG"/>
+                            <constraint firstItem="Pxe-me-1gt" firstAttribute="leading" secondItem="NA3-5V-T2c" secondAttribute="leading" id="Wgx-cz-7qp"/>
+                            <constraint firstItem="WFJ-xi-LMO" firstAttribute="top" secondItem="rNN-3a-4yZ" secondAttribute="bottom" constant="5" id="lDd-3K-ACy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rNN-3a-4yZ" secondAttribute="trailing" constant="-27" id="lWg-b1-vYv"/>
+                            <constraint firstAttribute="trailing" secondItem="Pxe-me-1gt" secondAttribute="trailing" id="wIt-k9-oFJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="EcoNorma  Images" id="sB0-Lu-cyJ">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="Chz-cD-s4j">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="addAction:" destination="fg4-n3-6RB" id="gPG-4F-6qT"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="play" id="80K-VK-yIi">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="playAppleWatch:" destination="fg4-n3-6RB" id="PkU-Av-uKS"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="action" id="BX4-NU-Ib0">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="backgroundAppleWatch:" destination="fg4-n3-6RB" id="gcG-Di-Hto"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="Chz-cD-s4j" id="tXG-HC-Xce"/>
+                        <outlet property="tableView" destination="Pxe-me-1gt" id="2zj-1H-x2n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ab-zt-jBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210" y="432"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="66S-KI-aY1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LpO-ja-ZcC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="khP-oV-g9G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.77963663226609936" blue="0.89884653141361259" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fg4-n3-6RB" kind="relationship" relationship="rootViewController" id="JtF-U6-9gS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNR-dx-RK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="432"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus_2" width="60" height="60"/>
+    </resources>
+</document>

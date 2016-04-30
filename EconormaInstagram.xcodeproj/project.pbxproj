@@ -7,16 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1201B8191CD38B5B004E2DC6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1201B8171CD38B5B004E2DC6 /* Interface.storyboard */; };
+		1201B81B1CD38B5B004E2DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1201B81A1CD38B5B004E2DC6 /* Assets.xcassets */; };
+		1201B8221CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1201B8211CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1201B8291CD38B5B004E2DC6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201B8281CD38B5B004E2DC6 /* InterfaceController.swift */; };
+		1201B82B1CD38B5B004E2DC6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201B82A1CD38B5B004E2DC6 /* ExtensionDelegate.swift */; };
+		1201B82D1CD38B5B004E2DC6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201B82C1CD38B5B004E2DC6 /* NotificationController.swift */; };
+		1201B82F1CD38B5B004E2DC6 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201B82E1CD38B5B004E2DC6 /* GlanceController.swift */; };
+		1201B8311CD38B5B004E2DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1201B8301CD38B5B004E2DC6 /* Assets.xcassets */; };
+		1201B8351CD38B5B004E2DC6 /* EconormaInstagram WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1201B8151CD38B5B004E2DC6 /* EconormaInstagram WatchKit App.app */; };
+		1201B8421CD3B1D7004E2DC6 /* TableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201B8411CD3B1D7004E2DC6 /* TableInterfaceController.swift */; };
+		1201B8441CD3B215004E2DC6 /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201B8431CD3B215004E2DC6 /* DetailRow.swift */; };
+		1201B8481CD50504004E2DC6 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1201B8471CD50504004E2DC6 /* WatchConnectivity.framework */; };
+		12B5434B1CC90F5700C4ADE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B5434A1CC90F5700C4ADE7 /* Main.storyboard */; };
+		12B5434D1CC9114800C4ADE7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B5434C1CC9114800C4ADE7 /* Image.swift */; };
+		12B5434F1CC92E5A00C4ADE7 /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B5434E1CC92E5A00C4ADE7 /* MyColor.swift */; };
+		12B543531CCA515F00C4ADE7 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12B543521CCA515F00C4ADE7 /* CustomView.xib */; };
+		12B543551CCA518D00C4ADE7 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B543541CCA518D00C4ADE7 /* CustomView.swift */; };
 		12E886881CC90A4400FB2D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E886871CC90A4400FB2D14 /* AppDelegate.swift */; };
 		12E8868A1CC90A4400FB2D14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E886891CC90A4400FB2D14 /* ViewController.swift */; };
-		12E8868D1CC90A4400FB2D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E8868B1CC90A4400FB2D14 /* Main.storyboard */; };
 		12E8868F1CC90A4400FB2D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E8868E1CC90A4400FB2D14 /* Assets.xcassets */; };
 		12E886921CC90A4400FB2D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E886901CC90A4400FB2D14 /* LaunchScreen.storyboard */; };
 		12E8869D1CC90A4400FB2D14 /* EconormaInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8869C1CC90A4400FB2D14 /* EconormaInstagramTests.swift */; };
 		12E886A81CC90A4400FB2D14 /* EconormaInstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E886A71CC90A4400FB2D14 /* EconormaInstagramUITests.swift */; };
+		12E886B81CC90AF500FB2D14 /* ImagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E886B51CC90AF500FB2D14 /* ImagesTableViewController.swift */; };
+		12E886B91CC90AF500FB2D14 /* ImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E886B61CC90AF500FB2D14 /* ImagesTableViewCell.swift */; };
+		12E886BA1CC90AF500FB2D14 /* ImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E886B71CC90AF500FB2D14 /* ImagesTableViewCell.xib */; };
+		8AE7103A81C0D5D39E00EA6D /* Pods_EconormaInstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115D63FAA8D344E9F45AE871 /* Pods_EconormaInstagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1201B8231CD38B5B004E2DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E8867C1CC90A4300FB2D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1201B8201CD38B5B004E2DC6;
+			remoteInfo = "EconormaInstagram WatchKit App Extension";
+		};
+		1201B8331CD38B5B004E2DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E8867C1CC90A4300FB2D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1201B8141CD38B5B004E2DC6;
+			remoteInfo = "EconormaInstagram WatchKit App";
+		};
 		12E886991CC90A4400FB2D14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 12E8867C1CC90A4300FB2D14 /* Project object */;
@@ -33,11 +67,56 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1201B8391CD38B5B004E2DC6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1201B8221CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1201B83D1CD38B5B004E2DC6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1201B8351CD38B5B004E2DC6 /* EconormaInstagram WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		115D63FAA8D344E9F45AE871 /* Pods_EconormaInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EconormaInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1201B8151CD38B5B004E2DC6 /* EconormaInstagram WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EconormaInstagram WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1201B8181CD38B5B004E2DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1201B81A1CD38B5B004E2DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1201B81C1CD38B5B004E2DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1201B8211CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EconormaInstagram WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1201B8271CD38B5B004E2DC6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1201B8281CD38B5B004E2DC6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1201B82A1CD38B5B004E2DC6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1201B82C1CD38B5B004E2DC6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1201B82E1CD38B5B004E2DC6 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		1201B8301CD38B5B004E2DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1201B8321CD38B5B004E2DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1201B8411CD3B1D7004E2DC6 /* TableInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInterfaceController.swift; sourceTree = "<group>"; };
+		1201B8431CD3B215004E2DC6 /* DetailRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
+		1201B8471CD50504004E2DC6 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		12B5434A1CC90F5700C4ADE7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		12B5434C1CC9114800C4ADE7 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		12B5434E1CC92E5A00C4ADE7 /* MyColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		12B543521CCA515F00C4ADE7 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		12B543541CCA518D00C4ADE7 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		12E886841CC90A4400FB2D14 /* EconormaInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EconormaInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E886871CC90A4400FB2D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12E886891CC90A4400FB2D14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		12E8868C1CC90A4400FB2D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12E8868E1CC90A4400FB2D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E886911CC90A4400FB2D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12E886931CC90A4400FB2D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,13 +126,27 @@
 		12E886A31CC90A4400FB2D14 /* EconormaInstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EconormaInstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E886A71CC90A4400FB2D14 /* EconormaInstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconormaInstagramUITests.swift; sourceTree = "<group>"; };
 		12E886A91CC90A4400FB2D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E886B51CC90AF500FB2D14 /* ImagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesTableViewController.swift; sourceTree = "<group>"; };
+		12E886B61CC90AF500FB2D14 /* ImagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesTableViewCell.swift; sourceTree = "<group>"; };
+		12E886B71CC90AF500FB2D14 /* ImagesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagesTableViewCell.xib; sourceTree = "<group>"; };
+		48BFC097216C3AFE7DFCDE6D /* Pods-EconormaInstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EconormaInstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EconormaInstagram/Pods-EconormaInstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		DAC7CC1D46C02EF0FC178ACE /* Pods-EconormaInstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EconormaInstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-EconormaInstagram/Pods-EconormaInstagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1201B81E1CD38B5B004E2DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12E886811CC90A4400FB2D14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1201B8481CD50504004E2DC6 /* WatchConnectivity.framework in Frameworks */,
+				8AE7103A81C0D5D39E00EA6D /* Pods_EconormaInstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +167,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1201B8161CD38B5B004E2DC6 /* EconormaInstagram WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1201B8171CD38B5B004E2DC6 /* Interface.storyboard */,
+				1201B81A1CD38B5B004E2DC6 /* Assets.xcassets */,
+				1201B81C1CD38B5B004E2DC6 /* Info.plist */,
+			);
+			path = "EconormaInstagram WatchKit App";
+			sourceTree = "<group>";
+		};
+		1201B8251CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1201B8281CD38B5B004E2DC6 /* InterfaceController.swift */,
+				1201B8411CD3B1D7004E2DC6 /* TableInterfaceController.swift */,
+				1201B8431CD3B215004E2DC6 /* DetailRow.swift */,
+				1201B82A1CD38B5B004E2DC6 /* ExtensionDelegate.swift */,
+				1201B82C1CD38B5B004E2DC6 /* NotificationController.swift */,
+				1201B82E1CD38B5B004E2DC6 /* GlanceController.swift */,
+				1201B8301CD38B5B004E2DC6 /* Assets.xcassets */,
+				1201B8321CD38B5B004E2DC6 /* Info.plist */,
+				1201B8261CD38B5B004E2DC6 /* Supporting Files */,
+			);
+			path = "EconormaInstagram WatchKit App Extension";
+			sourceTree = "<group>";
+		};
+		1201B8261CD38B5B004E2DC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1201B8271CD38B5B004E2DC6 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		12E8867B1CC90A4300FB2D14 = {
 			isa = PBXGroup;
 			children = (
 				12E886861CC90A4400FB2D14 /* EconormaInstagram */,
 				12E8869B1CC90A4400FB2D14 /* EconormaInstagramTests */,
 				12E886A61CC90A4400FB2D14 /* EconormaInstagramUITests */,
+				1201B8161CD38B5B004E2DC6 /* EconormaInstagram WatchKit App */,
+				1201B8251CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension */,
 				12E886851CC90A4400FB2D14 /* Products */,
+				6C8717FBFD7E3A524A233103 /* Pods */,
+				5EDDDED87C6BFA24C6095547 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +221,8 @@
 				12E886841CC90A4400FB2D14 /* EconormaInstagram.app */,
 				12E886981CC90A4400FB2D14 /* EconormaInstagramTests.xctest */,
 				12E886A31CC90A4400FB2D14 /* EconormaInstagramUITests.xctest */,
+				1201B8151CD38B5B004E2DC6 /* EconormaInstagram WatchKit App.app */,
+				1201B8211CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +230,16 @@
 		12E886861CC90A4400FB2D14 /* EconormaInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				12B5434E1CC92E5A00C4ADE7 /* MyColor.swift */,
+				12B5434C1CC9114800C4ADE7 /* Image.swift */,
 				12E886871CC90A4400FB2D14 /* AppDelegate.swift */,
 				12E886891CC90A4400FB2D14 /* ViewController.swift */,
-				12E8868B1CC90A4400FB2D14 /* Main.storyboard */,
+				12E886B51CC90AF500FB2D14 /* ImagesTableViewController.swift */,
+				12E886B61CC90AF500FB2D14 /* ImagesTableViewCell.swift */,
+				12E886B71CC90AF500FB2D14 /* ImagesTableViewCell.xib */,
+				12B543541CCA518D00C4ADE7 /* CustomView.swift */,
+				12B543521CCA515F00C4ADE7 /* CustomView.xib */,
+				12B5434A1CC90F5700C4ADE7 /* Main.storyboard */,
 				12E8868E1CC90A4400FB2D14 /* Assets.xcassets */,
 				12E886901CC90A4400FB2D14 /* LaunchScreen.storyboard */,
 				12E886931CC90A4400FB2D14 /* Info.plist */,
@@ -125,20 +265,77 @@
 			path = EconormaInstagramUITests;
 			sourceTree = "<group>";
 		};
+		5EDDDED87C6BFA24C6095547 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1201B8471CD50504004E2DC6 /* WatchConnectivity.framework */,
+				115D63FAA8D344E9F45AE871 /* Pods_EconormaInstagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C8717FBFD7E3A524A233103 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48BFC097216C3AFE7DFCDE6D /* Pods-EconormaInstagram.debug.xcconfig */,
+				DAC7CC1D46C02EF0FC178ACE /* Pods-EconormaInstagram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12E886831CC90A4400FB2D14 /* EconormaInstagram */ = {
+		1201B8141CD38B5B004E2DC6 /* EconormaInstagram WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12E886AC1CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagram" */;
+			buildConfigurationList = 1201B83A1CD38B5B004E2DC6 /* Build configuration list for PBXNativeTarget "EconormaInstagram WatchKit App" */;
 			buildPhases = (
-				12E886801CC90A4400FB2D14 /* Sources */,
-				12E886811CC90A4400FB2D14 /* Frameworks */,
-				12E886821CC90A4400FB2D14 /* Resources */,
+				1201B8131CD38B5B004E2DC6 /* Resources */,
+				1201B8391CD38B5B004E2DC6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1201B8241CD38B5B004E2DC6 /* PBXTargetDependency */,
+			);
+			name = "EconormaInstagram WatchKit App";
+			productName = "EconormaInstagram WatchKit App";
+			productReference = 1201B8151CD38B5B004E2DC6 /* EconormaInstagram WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1201B8201CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1201B8361CD38B5B004E2DC6 /* Build configuration list for PBXNativeTarget "EconormaInstagram WatchKit App Extension" */;
+			buildPhases = (
+				1201B81D1CD38B5B004E2DC6 /* Sources */,
+				1201B81E1CD38B5B004E2DC6 /* Frameworks */,
+				1201B81F1CD38B5B004E2DC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EconormaInstagram WatchKit App Extension";
+			productName = "EconormaInstagram WatchKit App Extension";
+			productReference = 1201B8211CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		12E886831CC90A4400FB2D14 /* EconormaInstagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E886AC1CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagram" */;
+			buildPhases = (
+				C1E2B1B38B1483829E3A8B28 /* Check Pods Manifest.lock */,
+				12E886801CC90A4400FB2D14 /* Sources */,
+				12E886811CC90A4400FB2D14 /* Frameworks */,
+				12E886821CC90A4400FB2D14 /* Resources */,
+				799ADCABF5A8CBBD1CEC2D52 /* Embed Pods Frameworks */,
+				E6147498AECA9A98BFCF35DF /* Copy Pods Resources */,
+				1201B83D1CD38B5B004E2DC6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1201B8341CD38B5B004E2DC6 /* PBXTargetDependency */,
 			);
 			name = EconormaInstagram;
 			productName = EconormaInstagram;
@@ -191,8 +388,32 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Alessandro Mattiuzzi MacPro";
 				TargetAttributes = {
+					1201B8141CD38B5B004E2DC6 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = G593D9STF5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					1201B8201CD38B5B004E2DC6 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = G593D9STF5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
 					12E886831CC90A4400FB2D14 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = G593D9STF5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					12E886971CC90A4400FB2D14 = {
 						CreatedOnToolsVersion = 7.3;
@@ -220,18 +441,39 @@
 				12E886831CC90A4400FB2D14 /* EconormaInstagram */,
 				12E886971CC90A4400FB2D14 /* EconormaInstagramTests */,
 				12E886A21CC90A4400FB2D14 /* EconormaInstagramUITests */,
+				1201B8141CD38B5B004E2DC6 /* EconormaInstagram WatchKit App */,
+				1201B8201CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1201B8131CD38B5B004E2DC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1201B81B1CD38B5B004E2DC6 /* Assets.xcassets in Resources */,
+				1201B8191CD38B5B004E2DC6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1201B81F1CD38B5B004E2DC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1201B8311CD38B5B004E2DC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12E886821CC90A4400FB2D14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				12E886921CC90A4400FB2D14 /* LaunchScreen.storyboard in Resources */,
+				12B543531CCA515F00C4ADE7 /* CustomView.xib in Resources */,
+				12B5434B1CC90F5700C4ADE7 /* Main.storyboard in Resources */,
+				12E886BA1CC90AF500FB2D14 /* ImagesTableViewCell.xib in Resources */,
 				12E8868F1CC90A4400FB2D14 /* Assets.xcassets in Resources */,
-				12E8868D1CC90A4400FB2D14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +493,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		799ADCABF5A8CBBD1CEC2D52 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EconormaInstagram/Pods-EconormaInstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E2B1B38B1483829E3A8B28 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6147498AECA9A98BFCF35DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EconormaInstagram/Pods-EconormaInstagram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1201B81D1CD38B5B004E2DC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1201B8421CD3B1D7004E2DC6 /* TableInterfaceController.swift in Sources */,
+				1201B82D1CD38B5B004E2DC6 /* NotificationController.swift in Sources */,
+				1201B82B1CD38B5B004E2DC6 /* ExtensionDelegate.swift in Sources */,
+				1201B8291CD38B5B004E2DC6 /* InterfaceController.swift in Sources */,
+				1201B82F1CD38B5B004E2DC6 /* GlanceController.swift in Sources */,
+				1201B8441CD3B215004E2DC6 /* DetailRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12E886801CC90A4400FB2D14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B5434D1CC9114800C4ADE7 /* Image.swift in Sources */,
+				12E886B91CC90AF500FB2D14 /* ImagesTableViewCell.swift in Sources */,
 				12E8868A1CC90A4400FB2D14 /* ViewController.swift in Sources */,
+				12B543551CCA518D00C4ADE7 /* CustomView.swift in Sources */,
+				12E886B81CC90AF500FB2D14 /* ImagesTableViewController.swift in Sources */,
 				12E886881CC90A4400FB2D14 /* AppDelegate.swift in Sources */,
+				12B5434F1CC92E5A00C4ADE7 /* MyColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +588,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1201B8241CD38B5B004E2DC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1201B8201CD38B5B004E2DC6 /* EconormaInstagram WatchKit App Extension */;
+			targetProxy = 1201B8231CD38B5B004E2DC6 /* PBXContainerItemProxy */;
+		};
+		1201B8341CD38B5B004E2DC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1201B8141CD38B5B004E2DC6 /* EconormaInstagram WatchKit App */;
+			targetProxy = 1201B8331CD38B5B004E2DC6 /* PBXContainerItemProxy */;
+		};
 		12E8869A1CC90A4400FB2D14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 12E886831CC90A4400FB2D14 /* EconormaInstagram */;
@@ -293,12 +611,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		12E8868B1CC90A4400FB2D14 /* Main.storyboard */ = {
+		1201B8171CD38B5B004E2DC6 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				12E8868C1CC90A4400FB2D14 /* Base */,
+				1201B8181CD38B5B004E2DC6 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		12E886901CC90A4400FB2D14 /* LaunchScreen.storyboard */ = {
@@ -312,6 +630,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1201B8371CD38B5B004E2DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "EconormaInstagram WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagram.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		1201B8381CD38B5B004E2DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "EconormaInstagram WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagram.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		1201B83B1CD38B5B004E2DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = EconormaInstagram_WatchKit_App_Extension;
+				INFOPLIST_FILE = "EconormaInstagram WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagram.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		1201B83C1CD38B5B004E2DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = EconormaInstagram_WatchKit_App_Extension;
+				INFOPLIST_FILE = "EconormaInstagram WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagram.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		12E886AA1CC90A4400FB2D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -333,6 +719,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -378,6 +765,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -397,8 +785,10 @@
 		};
 		12E886AD1CC90A4400FB2D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48BFC097216C3AFE7DFCDE6D /* Pods-EconormaInstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = EconormaInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagram;
@@ -408,8 +798,10 @@
 		};
 		12E886AE1CC90A4400FB2D14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC7CC1D46C02EF0FC178ACE /* Pods-EconormaInstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = EconormaInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECONORMA.EconormaInstagram;
@@ -466,6 +858,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1201B8361CD38B5B004E2DC6 /* Build configuration list for PBXNativeTarget "EconormaInstagram WatchKit App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1201B8371CD38B5B004E2DC6 /* Debug */,
+				1201B8381CD38B5B004E2DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1201B83A1CD38B5B004E2DC6 /* Build configuration list for PBXNativeTarget "EconormaInstagram WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1201B83B1CD38B5B004E2DC6 /* Debug */,
+				1201B83C1CD38B5B004E2DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		12E8867F1CC90A4300FB2D14 /* Build configuration list for PBXProject "EconormaInstagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -482,6 +890,7 @@
 				12E886AE1CC90A4400FB2D14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12E886AF1CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +899,7 @@
 				12E886B11CC90A4400FB2D14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12E886B21CC90A4400FB2D14 /* Build configuration list for PBXNativeTarget "EconormaInstagramUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +908,7 @@
 				12E886B41CC90A4400FB2D14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
